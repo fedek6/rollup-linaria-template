@@ -4,6 +4,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import commonjs from "@rollup/plugin-commonjs";
 import linaria from "@linaria/rollup";
 import css from "rollup-plugin-css-only";
+import flatDts from 'rollup-plugin-flat-dts';
 
 const packageJson = require("./package.json");
 
@@ -18,7 +19,8 @@ export default {
     {
       file: packageJson.module,
       format: "esm",
-      sourcemap: true
+      sourcemap: true,
+      plugins: [flatDts()]
     }
   ],
 	plugins: [
@@ -31,6 +33,8 @@ export default {
       classNameSlug: (hash, title) => `${packageJson.name}__${hash}__${title}`
     }),
     css({ output: "css/bundle.css" }),
-		typescript({ useTsconfigDeclarationDir: true, tsconfig: "./tsconfig.json" })
+		typescript({ 
+      tsconfig: "./tsconfig.json"
+    })
 	]
 }
