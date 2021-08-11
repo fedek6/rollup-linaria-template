@@ -26,6 +26,9 @@ export default {
     commonjs(),
     linaria({
       exclude: ["node_modules/**"],
+      evaluate: true,
+      displayName: true,
+      classNameSlug: (hash, title) => `${packageJson.name}__${hash}__${title}`
     }),
     css({ output: "css/bundle.css" }),
 		typescript({ useTsconfigDeclarationDir: true, tsconfig: "./tsconfig.json" })
