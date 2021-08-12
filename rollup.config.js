@@ -29,8 +29,8 @@ export default {
     linaria({
       exclude: ["node_modules/**"],
       evaluate: true,
-      displayName: true,
-      classNameSlug: (hash, title) => `${packageJson.name}__${hash}__${title}`
+      classNameSlug: (hash, title) => `${packageJson.name}__${hash}__${title}`,
+      sourceMap: true
     }),
     css({ output: "css/bundle.css" }),
 		typescript({ 
