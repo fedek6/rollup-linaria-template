@@ -15,7 +15,8 @@
     "src"
   ],
   "scripts": {
-    "build": "rollup --config"
+    "build": "yarn clean && rollup --config",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
