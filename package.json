@@ -1,6 +1,6 @@
 {
   "name": "@fedek6/rollup-linaria-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": "git@github.com:fedek6/rollup-linaria-template.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -12,11 +12,12 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
-    "src"
+    "src",
+    "styles.css"
   ],
   "scripts": {
     "build": "yarn clean && rollup --config",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist styles.css"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

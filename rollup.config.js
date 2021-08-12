@@ -32,7 +32,7 @@ export default {
       classNameSlug: (hash, title) => `${packageJson.name}__${hash}__${title}`,
       sourceMap: true
     }),
-    css({ output: "css/bundle.css" }),
+    css({ output: "css/../../styles.css" }),
 		typescript({ 
       tsconfig: "./tsconfig.json"
     })
