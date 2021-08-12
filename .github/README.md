@@ -8,8 +8,24 @@ It's kind of hard to find any documentation for this library (which is kind of b
 
 ## Scripts
 
-`yarn build` — that's all!
-`npm publish` — to publish to git NPM.
+* `yarn build` — that's all!
+* `npm publish` — to publish to git NPM.
+
+## Usage
+
+Installation:
+
+```bash
+echo "@fedek6:registry" "https://npm.pkg.github.com" > .yarnrc
+yarn add @fedek6/rollup-linaria-template@1.0.3
+```
+
+Import:
+
+```tsx
+import { HelloWorld } from "@fedek6/rollup-linaria-template";
+import "@fedek6/rollup-linaria-template/styles.css";
+```
 
 ## Inspirations
 
