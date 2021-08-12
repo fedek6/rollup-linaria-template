@@ -9,3 +9,8 @@ It's kind of hard to find any documentation for this library (which is kind of b
 ## Scripts
 
 `yarn build` — that's all!
+`npm publish` — to publish to git NPM.
+
+## Inspirations
+
+* [Reach UI](https://reach.tech/)
