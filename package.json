@@ -19,6 +19,9 @@
     "build": "yarn clean && rollup --config",
     "clean": "rm -rf dist styles.css"
   },
+  "sideEffects": [
+    "*.css"
+  ],
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
