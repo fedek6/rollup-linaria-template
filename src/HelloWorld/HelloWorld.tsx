@@ -1,8 +1,13 @@
 import * as React from "react";
 import { css } from "@linaria/core";
+import { styled } from "@linaria/react";
 
-const header = css`
+const headerModifier = css`
   text-transform: uppercase;
+`;
+
+const Header = styled.h1`
+  color: White;
 `;
 
 interface Props {
@@ -10,5 +15,5 @@ interface Props {
 }
 
 export const HelloWorld = ({ children }: Props) => {
-  return <h1 className={header}>{ children }</h1>;
+  return <Header className={headerModifier}>{ children }</Header>;
 };
