@@ -1,5 +1,7 @@
 # Rollup Linaria template
 
+> This is the one and only full example on how to use `Linaria` with `Rollup`. I've spent way too much time on this 😳 
+
 <img src="./linaria-logo@2x.png" width="150"><img src="./rollup.svg" width="50">
 
 This example shows how to use [Linaria](https://github.com/callstack/linaria) to build React packages.
@@ -8,7 +10,7 @@ It's kind of hard to find any documentation for this library (which is kind of b
 
 ## Scripts
 
-* `yarn build` — that's all!
+* `yarn build` — this should build `dist` and `style.css` in a root of this project.
 * `npm publish` — to publish to git NPM.
 
 ## Usage
@@ -30,3 +32,4 @@ import "@fedek6/rollup-linaria-template/styles.css";
 ## Inspirations
 
 * [Reach UI](https://reach.tech/)
+ 
