@@ -1,6 +1,6 @@
 {
   "name": "@fedek6/rollup-linaria-template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "git@github.com:fedek6/rollup-linaria-template.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
